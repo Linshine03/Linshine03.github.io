@@ -12,9 +12,16 @@
     </title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+
+    <link rel="stylesheet" href="/js/layui/css/layui.css" />
+
     <link rel="stylesheet" href="/css/mic_main.css" />
     <link rel="stylesheet" href="/css/dropdownMenu.css" />
     
+    <link rel="stylesheet" href="/css/style.css" />
+
+    
+
     <noscript>
         <link rel="stylesheet" href="/css/noscript.css" />
     </noscript>
@@ -25,6 +32,7 @@
     <script src="/js/skel.min.js"></script>
     <script src="/js/util.js"></script>
     <script src="/js/main.js"></script>
+    <script src="/js/layui/layui.js"></script>
 	
 </head>
     
@@ -85,7 +93,7 @@
 </nav>
 
         <div id="main" >
-            <div class ="post_page_title_img" style="height: 25rem;background-image: url(undefined);background-position: center; background-repeat:no-repeat; background-size:cover;-moz-background-size:cover;overflow:hidden;" >
+            <div class ="post_page_title_img" style="height: 25rem;background-image: url(undefined);background-position: center; background-repeat:no-repeat; background-size:100%;-moz-background-size:100%;overflow:hidden;" >
                 <a href="#" style="padding: 4rem 4rem 2rem 4rem ;"><h2 >Categories</h2></a>
             </div>
             <!-- Post -->
@@ -109,6 +117,13 @@
 			
         </div>
     </div>
+    <script>
+        layui.use('util', function() {
+            var util = layui.util;
+            //执行
+            util.fixbar({});
+        });
+    </script>
 </body>
 
 
